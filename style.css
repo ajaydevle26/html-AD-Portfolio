@@ -1,0 +1,879 @@
+:root {
+  --nav-bar-color: rgba(0, 0, 0, 255);
+  --Background-color: rgba(10, 10, 10, 255);
+  --red-color: rgba(220, 38, 37, 255);
+  --white-color: rgba(254, 254, 254, 255);
+  --gray-color: rgba(179, 170, 199, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Background-color);
+  max-width: 3500px;
+  margin: 0 auto;
+  min-width: 365px;
+  cursor: default;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  background-color: var(--nav-bar-color);
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 60px;
+  align-items: center;
+}
+
+nav .left a {
+  color: var(--red-color);
+  font-size: 30px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav .right a {
+  color: var(--white-color);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: 0.2s;
+}
+
+/* Home */
+
+#Home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 80px 0;
+  gap: 50px;
+}
+
+#Home .text1 {
+  color: var(--red-color);
+  flex: 5;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+#Home .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+#Home .text1 span {
+  color: var(--red-color);
+  font-size: 35px;
+  font-weight: 500;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+#Home .text1 p {
+  color: var(--gray-color);
+  margin-bottom: 25px;
+  transition: 0.2s;
+}
+
+#Home .headshot img {
+  width: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#Home .text1 a {
+  background-color: var(--red-color);
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+/* about Me */
+#About {
+  padding: 0 50px;
+  margin: 80px 0;
+  gap: 50px;
+}
+
+.text2 li {
+  color: var(--red-color);
+  font-size: large;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.text2 li span {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+.text2 h3 {
+  color: var(--white-color);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+.text2 p {
+  color: var(--gray-color);
+  transition: 0.2s;
+}
+
+#About .logo span {
+  color: var(--white-color);
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+#About .logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  background-color: var(--nav-bar-color);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+#About .logo {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: var(--Background-color);
+  border-radius: 5px;
+  gap: 10px;
+}
+
+#About .logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+/* Service */
+
+#Service {
+  padding: 0 50px;
+  margin: 80px 0;
+  gap: 50px;
+}
+
+.servicegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--nav-bar-color);
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 25px;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.servicediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 400px;
+  flex-direction: column;
+  padding: 10px 10px;
+  background-color: var(--Background-color);
+  border-radius: 5px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#Service h3 {
+  color: var(--white-color);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+.text3 li {
+  color: var(--red-color);
+  font-size: large;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.text3 li span {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+.servicegrid i {
+  color: var(--red-color);
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.servicegrid span {
+  color: var(--white-color);
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.servicegrid p {
+  color: var(--gray-color);
+  transition: 0.2s;
+}
+
+/* Resume */
+
+#Resume {
+  padding: 0 50px;
+  margin: 80px 0;
+  gap: 10px;
+}
+
+.ResumeGrid {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-self: center;
+  background-color: var(--nav-bar-color);
+  border-radius: 5px;
+}
+
+.Resumeflex {
+  gap: 10px;
+  flex: 6;
+  border-right: 0.1px solid var(--gray-color);
+  padding: 20px;
+}
+.Resumeflex2 {
+  flex: 4;
+  gap: 10px;
+  padding: 20px;
+}
+
+.text4 li {
+  color: var(--red-color);
+  font-size: large;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#Resume h3 {
+  color: var(--white-color);
+  font-size: 30px;
+  gap: 0;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+#Resume .text4 span {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+#Resume i {
+  color: var(--red-color);
+  transition: 0.2s;
+}
+.Resumediv span {
+  color: var(--white-color);
+  font-size: 20px;
+  font-size: large;
+  transition: 0.2s;
+}
+
+.Resumediv p,
+li,
+a {
+  color: var(--red-color);
+  transition: 0.2s;
+}
+
+.Resumediv p,
+li,
+a {
+  color: var(--gray-color);
+  transition: 0.2s;
+}
+
+#red {
+  color: var(--red-color);
+  margin-right: 5px;
+  margin-left: 15px;
+  font-size: small;
+  transition: 0.2s;
+}
+
+.Resumediv li {
+  list-style-type: none;
+  transition: 0.2s;
+}
+
+.Resumediv1 span {
+  color: var(--white-color);
+  font-size: 20px;
+  font-size: large;
+  transition: 0.2s;
+}
+
+.Resumediv1 li {
+  list-style-type: none;
+  transition: 0.2s;
+}
+
+#years {
+  margin-left: 25px;
+  font-size: small;
+}
+
+.Resumediv p {
+  margin-left: 15px;
+  transition: 0.2s;
+}
+
+/* Contact */
+#Contact {
+  background-color: var(--nav-bar-color);
+  height: 400px;
+}
+
+.contactmain {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 50px 0;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav2 {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-top: 5px;
+  gap: 5px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  margin-top: 5px;
+  gap: 5px;
+  transition: 0.2s;
+}
+
+.profile2 {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  margin-top: 25px;
+  gap: 5px;
+  transition: 0.2s;
+}
+
+.text5 {
+  display: flex;
+  flex-direction: column;
+  flex: 15;
+  margin-top: 5px;
+  gap: 5px;
+  transition: 0.2s;
+}
+#Email,
+#phone,
+#Address {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.text5 h1 {
+  color: var(--white-color);
+  font-size: medium;
+  transition: 0.2s;
+}
+
+.text5 h3 {
+  color: var(--gray-color);
+  font-size: small;
+  transition: 0.2s;
+}
+.nav2 a {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+.profile2 h3 {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+.profile2 h5 {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+.details i {
+  color: var(--red-color);
+  margin-right: 10px;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+
+.details h3 {
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+.details h3 a {
+  margin-bottom: 25px;
+  transition: 0.2s;
+}
+#icon {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.last {
+  background-color: var(--Background-color);
+  display: flex;
+  justify-self: flex-end;
+}
+
+.last a {
+  color: var(--red-color);
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+@media (max-width: 785px) {
+  /* navbar */
+  nav {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .left a {
+    color: var(--red-color);
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  nav .right a {
+    color: var(--white-color);
+    font-size: 8px;
+    font-weight: 600;
+    margin: 0 15px;
+  }
+
+  /* home */
+
+  #Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  #Home .text1 {
+    color: var(--red-color);
+    flex: 5;
+    font-size: 10px;
+    order: 1;
+    text-align: center;
+  }
+
+  #Home .headshot img {
+    width: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  #Home .text1 span {
+    color: var(--red-color);
+    font-size: 20px;
+    font-weight: 500;
+    font-weight: bold;
+  }
+  /* about */
+  .text2 {
+    text-align: center;
+  }
+  .text2 i {
+    display: none;
+  }
+  #About .logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-color: var(--nav-bar-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 2px;
+  }
+
+  #About .logo {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    width: 250x;
+    padding: 10px 20px;
+    background-color: var(--Background-color);
+    border-radius: 5px;
+    gap: 10px;
+  }
+  #About .logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  #About {
+    padding: 0 20px;
+    margin: 80px 0;
+    gap: 50px;
+  }
+
+  .text2 li {
+    color: var(--red-color);
+    font-size: small;
+    font-weight: 600;
+  }
+  .text2 p {
+    color: var(--gray-color);
+    font-size: small;
+  }
+
+  .text2 h3 {
+    color: var(--white-color);
+    font-size: 20px;
+  }
+
+  /* service */
+
+  #Service {
+    padding: 0 20px;
+    margin: 80px 0;
+    gap: 50px;
+  }
+  .text3 {
+    text-align: center;
+  }
+
+  .text3 i {
+    display: none;
+  }
+
+  #Service h3 {
+    color: var(--white-color);
+    font-size: 20px;
+  }
+
+  .servicegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--nav-bar-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 25px;
+    border-radius: 5px;
+    gap: 1rem;
+  }
+
+  .servicediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 250px;
+    flex-direction: column;
+    padding: 2px 2px;
+    background-color: var(--Background-color);
+    border-radius: 5px;
+    gap: 1px;
+    flex-wrap: nowrap;
+    text-align: center;
+    text-align: center;
+  }
+
+  /* resume */
+  #Resume {
+    padding: 0 20px;
+    margin: 80px 0;
+    gap: 10px;
+  }
+  .ResumeGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 25px;
+    align-self: center;
+    background-color: var(--nav-bar-color);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .text4 {
+    text-align: center;
+  }
+
+  .text4 i {
+    display: none;
+  }
+  #Resume h3 {
+    font-size: larger;
+  }
+
+  .Resumeflex {
+    gap: 10px;
+    flex: 6;
+    padding: 20px;
+    border: transparent;
+  }
+
+  .text1 span:hover {
+    color: var(--red-color);
+    filter: contrast(1.5);
+  }
+}
+@media (min-width: 825px) {
+  /* about */
+  #About .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--nav-bar-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 2px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .servicegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--nav-bar-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 25px;
+    border-radius: 5px;
+    gap: 1rem;
+  }
+
+  .contactmain {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 5px;
+    margin: 10px 0;
+    gap: 2.5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #Contact {
+    background-color: var(--nav-bar-color);
+    height: 525px;
+  }
+
+  #Email,
+  #phone,
+  #Address {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    margin-bottom: 5px;
+  }
+  .last {
+    background-color: var(--Background-color);
+    display: flex;
+    justify-self: center;
+  }
+  .nav2 a {
+    color: var(--white-color);
+    font-size: small;
+  }
+  .profile2 h3 h5 {
+    color: var(--white-color);
+    font-size: small;
+  }
+
+  .details h3 {
+    color: var(--white-color);
+    font-size: small;
+  }
+
+  .details h3 a {
+    margin-bottom: 25px;
+    font-size: small;
+  }
+
+  .text5 {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+    margin-top: 5px;
+    gap: 5px;
+  }
+  .nav2 {
+    display: flex;
+    flex-direction: column;
+    flex: 10;
+    margin-top: 5px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+  .servicegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--nav-bar-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 25px;
+    border-radius: 5px;
+    gap: 1rem;
+  }
+}
+
+/* hover */
+
+* i:hover {
+  filter: contrast(1.5);
+}
+
+nav .left a:hover {
+  filter: contrast(1.5);
+}
+
+nav .right a:hover {
+  color: var(--red-color);
+}
+
+.text1 h3:hover {
+  filter: contrast(1.5);
+}
+
+#Home span:hover {
+  filter: contrast(1.5);
+}
+
+#Home a:hover {
+  filter: contrast(1.5);
+}
+
+#About span:hover,
+#About h3:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+.logo:hover {
+  filter: brightness(1.5);
+}
+
+#Service span:hover,
+#Service h3:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+.servicediv:hover {
+  filter: brightness(1.5);
+}
+.text2 p:hover {
+  filter: brightness(1.5);
+}
+
+.text1 p:hover {
+  filter: brightness(1.5);
+}
+
+#Resume span:hover,
+#Resume h3:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+#Resume p:hover,
+#Resume a:hover,
+#Resume li:hover {
+  filter: brightness(1.5);
+}
+
+#Contact a:hover {
+  filter: brightness(1.5);
+}
+
+.text5 h3:hover {
+  filter: brightness(1.5);
+}
+
+.text5 h1:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+.nav2 a:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+.profile2 h3:hover,
+.profile2 h5:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+.details h3:hover {
+  color: var(--red-color);
+  filter: contrast(1.5);
+}
+
+* p::selection,
+li::selection {
+  background-color: var(--white-color);
+  color: var(--red-color);
+}
