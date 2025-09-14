@@ -714,7 +714,7 @@ a {
 
   #Contact {
     background-color: var(--nav-bar-color);
-    height: 525px;
+    height: 550px;
   }
 
   #Email,
@@ -877,3 +877,4 @@ li::selection {
   background-color: var(--white-color);
   color: var(--red-color);
 }
+
