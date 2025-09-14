@@ -722,8 +722,8 @@ a {
   #Address {
     display: flex;
     flex-direction: column;
-    gap: 2.5px;
-    margin-bottom: 5px;
+    gap: 1px;
+    margin-bottom: 1px;
   }
   .last {
     background-color: var(--Background-color);
@@ -877,4 +877,5 @@ li::selection {
   background-color: var(--white-color);
   color: var(--red-color);
 }
+
 
