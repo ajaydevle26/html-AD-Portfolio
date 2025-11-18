@@ -878,4 +878,14 @@ li::selection {
   color: var(--red-color);
 }
 
+#downloadResume a {
+  top: 10px;
+  background-color: var(--red-color);
+  padding: 10px 10px;
+  border-radius: 5px;
+  color: var(--white-color);
+  transition: 0.2s;
+}
+
+
 
